@@ -9,15 +9,15 @@ body { padding:0px;margin: 0px; }
 #lyrow input, #lyrow textarea { border:rgb(235, 235, 235) 1px solid;border-radius: 3px;padding: 5px 8px;outline: 0; } 
 #lyrow input:hover, #lyrow textarea:hover { border: 1px solid #6bc1f2; } 
 /*--编辑--*/ 
-#lyrow .home { font-size:50px;font-weight:bolder;text-align:center;border:rgba(255, 99, 99, 1) double 13px;border-radius:30px 30px 30px 30px;text-shadow:0 0 40px rgba(255, 135, 193, 0.83);box-shadow:0 0 25px 15px rgba(247, 250, 170, 0.28) inset;margin:5px 0 0 0;max-width:235px; } 
-#lyrow .time { font-size:15px;border:rgba(255, 120, 147, 1) double 13px;border-radius:20px 20px 20px 20px;max-width:61px;position:absolute;top:8px;right:5px;font-weight:bolder;box-shadow:0 0 21px 5px rgba(252, 233, 159, 0.31) inset; } 
-#lyrow .study { font-size:15px;font-weight:bolder;padding:0 0 0 5px;background:radial-gradient(at 0% 0%,rgba(231, 196, 255, 1) 1%, rgba(190, 190, 250, 1) 100%);border-radius:20px 20px 20px 20px;box-shadow:0 24px 30px 0 rgba(245, 215, 231, 0.62);margin:5px 0 0 0; } 
-#lyrow .texta { font-size:20px;border:rgba(140, 250, 197, 1) double 10px;border-radius:20px 20px 20px 20px;margin:5px 0 0 0;width:85%;box-shadow:23px 0 23px 0 rgba(148, 218, 255, 0.64); } 
+#lyrow .home { font-size:50px;font-weight:bolder;text-align:center;border:rgba(255, 99, 99, 1) double 13px;border-radius:30px 30px 30px 30px;text-shadow:0 0 40px rgba(255, 135, 193, 0.83);box-shadow:0 0 25px 15px rgba(247, 250, 170, 0.28) inset;margin:5px 0 0 0; } 
+#lyrow .time { font-size:15px;border:rgb(255, 255, 255, 1) none 13px;border-radius:20px 20px 20px 20px;top:8px;right:5px;font-weight:bolder;box-shadow:0 0 21px 5px rgba(252, 233, 159, 0.31) inset;color:rgba(0, 0, 250, 1);padding:11px 0 0 0;text-indent:10px;font-style:italic; } 
+#lyrow .study { font-size:15px;font-weight:bolder;padding:0 0 0 5px;background:radial-gradient(at 0% 0%,rgba(196, 243, 255, 1) 8%, rgba(226, 190, 250, 1) 100%);border-radius:20px 20px 20px 20px;box-shadow:0 24px 28px 0 rgba(255, 127, 204, 0.62);margin:5px 0 0 0; } 
+#lyrow .texta { font-size:20px;border:rgba(140, 250, 197, 1) double 10px;border-radius:20px 20px 20px 20px;margin:6px 0 0 0;width:85%;box-shadow:23px 0 23px 0 rgba(148, 218, 255, 0.64); } 
 #lyrow .textb { font-size:20px;border:rgba(150, 210, 250, 1) double 10px;border-radius:20px 20px 20px 20px;width:85%;right:-9%;box-shadow:26px 0 17px 0 rgba(247, 198, 161, 0.47);margin:5px 0 0 0; } 
 #lyrow .textc { font-size:20px;border:rgba(250, 145, 154, 1) double 10px;border-radius:20px 20px 20px 20px;width:85%;box-shadow:22px 0 37px 0 rgba(148, 242, 242, 0.54);margin:5px 0 0 0; } 
 #lyrow .textd { margin:5px 0 0 0;font-size:20px;border-radius:20px 20px 20px 20px;border:rgba(242, 185, 87, 1) double 10px;width:85%;box-shadow:20px 0 17px 0 rgba(157, 161, 245, 0.32); } 
 #lyrow .bottom { display:block !important;background:radial-gradient(at 0% 0%,rgba(137, 245, 202, 1) 1%, rgba(172, 221, 247, 1) 100%);height:53px !important;border-radius:20px 20px 20px 20px;font-size:26px;font-weight:bold;text-align:center;margin:10px 0 0 0;padding:18px 0 0 0;box-shadow:0 0 33px 6px rgba(0, 0, 0, 0.52); } 
-#lyrow .img { background:radial-gradient(at 0% 0%,rgba(250, 230, 238, 1) 1%, rgba(223, 200, 250, 1) 100%);border-radius:30px 30px 30px 30px;box-shadow:0 0 22px 0 rgba(0, 0, 0, 0.65);position:relative;left:95px;margin:15px 0 0 0; } 
+#lyrow .img { background:linear-gradient(0deg,rgba(255, 255, 255, 1) 1%, rgba(255, 255, 255, 1) 100%);border-radius:30px 30px 30px 30px;box-shadow:0 0 22px 0 rgba(0, 0, 0, 0.65);left:30px;margin:15px 0 0 0;position:relative; } 
 #lyrow .imgtop { box-shadow:0 0 72px 11px rgba(0, 0, 0, 0.26);border-radius:20px 20px 20px 20px;margin:17px 29px 0 29px; } 
 
 </style>
@@ -28,12 +28,12 @@ body { padding:0px;margin: 0px; }
 
 
     <h1 class="home">Home<br></h1>
-    <h1 class="time">编辑时间<br>04-22<br>20:00</h1>
     <h1 class="study">学习小屋<br>近期更新---等时返回模型<br>近期计划---</h1>
-    <h1 class="texta">最后一次换UI喽。把上次翻车的那个妥协了一下，没效果了，不过比旧的好看一些吧应该 理综6个选择，其他还都没对，先把这个弄完溜达会儿，晚上没事再对答案吧😂对了，留言点下面绿块就行哈</h1>
+    <h1 class="time">编辑时间：04-22     21:21</h1>
+    <h1 class="texta">最后一次换UI喽。把上次翻车的那个妥协了一下，没特效了，不过比旧的好看一些吧应该 理综6个选择，其他还都没对，出去溜达了会儿弄得这个，晚上没事再对答案吧😂</h1>
     <h1 class="textb">送东西给保安逮了个正着，好在没拍照，lucky。没有少你的噢 嘿嘿。带奶茶送了8张代金券😂😂够用了</h1>
     <h1 class="textc">快递明天到。周测的话给你送过去，不周测的话就下次考试吧。对了，今天听说，以后好像无休了，就和高一那会儿七个小时差不多qwq</h1>
     <h1 class="textd">那个你今天给我那个是什么动物哈哈哈哈，猜了半天都感觉不对</h1>
     <a class="bottom" href="https://wj.qq.com/s2/8057110/6e8c/">等你的留言噢</a>
-    <img src="https://i.loli.net/2021/02/20/dUTvPmiJCXjzfS4.png" class="img" width="160" height="160">
+    <img src="https://i.loli.net/2021/02/20/dUTvPmiJCXjzfS4.png" class="img" width="300" height="300">
 </div>
