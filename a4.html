@@ -1,5 +1,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
 
+
+
 <style>
 /*--预设--*/ 
 body { padding:0px;margin: 0px; } 
@@ -9,16 +11,16 @@ body { padding:0px;margin: 0px; }
 #lyrow input, #lyrow textarea { border:rgb(235, 235, 235) 1px solid;border-radius: 3px;padding: 5px 8px;outline: 0; } 
 #lyrow input:hover, #lyrow textarea:hover { border: 1px solid #6bc1f2; } 
 /*--编辑--*/ 
-#lyrow .title { border:rgba(247, 134, 134, 1) double 10px;border-radius:50px 50px 50px 50px;font-weight:bolder;text-align:center;font-size:40px;box-shadow:0 13px 36px 13px rgba(255, 184, 188, 0.8); } 
-#lyrow .study { font-size:15px;font-weight:bold;border-radius:50px 50px 50px 50px;background:linear-gradient(180deg,rgba(245, 213, 218, 1) 1%, rgba(140, 228, 255, 1) 100%);padding:0 0 0 22px;box-shadow:0 9px 15px 7px rgba(0, 0, 0, 0.2);width:249px !important;position:absolute;left:11px; } 
-#lyrow .date { background:linear-gradient(180deg,rgba(217, 187, 250, 1) 1%, rgba(196, 211, 255, 1) 100%);border-radius:50px 50px 50px 50px;font-size:15px;padding:0 0 0 18px;width:78px !important;position:absolute;top:75px;right:15px;box-shadow:0 0 17px 12px rgba(0, 0, 0, 0.32); } 
-#lyrow .orange { margin:75px 0 0 0;font-size:20px;border:rgba(255, 132, 94, 1) double 8px;border-radius:20px 20px 20px 20px;box-shadow:0 0 26px 5px rgba(245, 224, 142, 0.51) inset,57px 0 28px 4px rgba(176, 225, 252;width:70%;position:relative;left:2%; } 
-#lyrow .blue { font-size:20px;border:rgba(147, 214, 250, 1) double 8px;border-radius:20px 20px 20px 20px;box-shadow:0 0 31px 8px rgba(184, 230, 255, 0.47) inset,0 0 31px 8px rgba(166, 247, 208;width:70%;position:relative;margin:5px 0 0 0;right:-80px; } 
-#lyrow .green { font-size:20px;border:rgba(136, 247, 171, 1) double 8px;border-radius:20px 20px 20px 20px;width:70%;box-shadow:0 0 25px 8px rgba(171, 245, 142, 0.42) inset,57px 0 25px 8px rgba(245, 142, 142, 0.42);margin:5px 0 0 0;position:relative;left:2%; } 
-#lyrow .red { font-size:20px;border:rgba(255, 0, 0, 1) double 8px;border-radius:20px 20px 20px 20px;box-shadow:0 0 13px 8px rgba(252, 116, 116, 0.27) inset,0 0 18px 8px rgba(172, 158, 250, 0.57);width:70%;margin:5px 0 0 0;position:relative;right:-80px; } 
-#lyrow .purple { font-size:20px;border:rgba(220, 182, 245, 1) double 8px;border-radius:20px 20px 20px 20px;box-shadow:0 0 14px 5px rgba(252, 187, 252, 0.53) inset,0 0 21px 3px rgba(0, 0, 0, 0.19);margin:5px 0 0 2%;width:70%; } 
-#lyrow .imgunder { border-radius:20px 20px 20px 20px;box-shadow:0 0 21px 3px rgba(0, 0, 0, 0.19);margin:5px 0 1% 2%;position:absolute; } 
-#lyrow .bottom { border-radius:20px 20px 20px 20px;box-shadow:0 0 16px 7px rgba(15, 15, 15, 0.11);width:150px !important;height:150px !important;position:relative;right:-200px;font-size:22px;font-weight:bolder;text-align:center;background:radial-gradient(at 0% 0%,rgba(245, 215, 232, 1) 1%, rgba(180, 245, 250, 1) 100%);display:block !important;margin:5px 0 0 0; } 
+#lyrow .home { font-size:50px;font-weight:bolder;text-align:center;border:rgba(255, 99, 99, 1) double 13px;border-radius:30px 30px 30px 30px;text-shadow:0 0 40px rgba(255, 135, 193, 0.83);box-shadow:0 0 25px 15px rgba(247, 250, 170, 0.28) inset;margin:5px 0 0 0; } 
+#lyrow .time { font-size:15px;border:rgb(255, 255, 255, 1) none 13px;border-radius:20px 20px 20px 20px;top:8px;right:5px;font-weight:bolder;box-shadow:0 0 21px 5px rgba(252, 233, 159, 0.31) inset;color:rgba(0, 0, 250, 1);padding:11px 0 0 0;text-indent:10px;font-style:italic; } 
+#lyrow .study { font-size:15px;font-weight:bolder;padding:0 0 0 5px;background:radial-gradient(at 0% 0%,rgba(196, 243, 255, 1) 8%, rgba(226, 190, 250, 1) 100%);border-radius:20px 20px 20px 20px;box-shadow:0 24px 28px 0 rgba(255, 127, 204, 0.62);margin:5px 0 0 0; } 
+#lyrow .texta { font-size:20px;border:rgba(140, 250, 197, 1) double 10px;border-radius:20px 20px 20px 20px;margin:6px 0 0 0;width:85%;box-shadow:23px 0 23px 0 rgba(148, 218, 255, 0.64); } 
+#lyrow .textb { font-size:20px;border:rgba(150, 210, 250, 1) double 10px;border-radius:20px 20px 20px 20px;width:85%;right:-9%;box-shadow:26px 0 17px 0 rgba(247, 198, 161, 0.47);margin:5px 0 0 0; } 
+#lyrow .textc { font-size:20px;border:rgba(250, 145, 154, 1) double 10px;border-radius:20px 20px 20px 20px;width:85%;box-shadow:22px 0 37px 0 rgba(148, 242, 242, 0.54);margin:5px 0 0 0; } 
+#lyrow .textd { margin:5px 0 0 0;font-size:20px;border-radius:20px 20px 20px 20px;border:rgba(242, 185, 87, 1) double 10px;width:85%;box-shadow:20px 0 17px 0 rgba(157, 161, 245, 0.32); } 
+#lyrow .bottom { display:block !important;background:radial-gradient(at 0% 0%,rgba(137, 245, 202, 1) 1%, rgba(172, 221, 247, 1) 100%);height:53px !important;border-radius:20px 20px 20px 20px;font-size:26px;font-weight:bold;text-align:center;margin:10px 0 0 0;padding:18px 0 0 0;box-shadow:0 0 33px 6px rgba(0, 0, 0, 0.52); } 
+#lyrow .img { background:linear-gradient(0deg,rgba(255, 255, 255, 1) 1%, rgba(255, 255, 255, 1) 100%);border-radius:30px 30px 30px 30px;box-shadow:0 0 22px 0 rgba(0, 0, 0, 0.65);left:30px;margin:15px 0 0 0;position:relative; } 
+#lyrow .imgtop { box-shadow:0 0 72px 11px rgba(0, 0, 0, 0.26);border-radius:20px 20px 20px 20px;margin:17px 29px 0 29px; } 
 
 </style>
 <!--下载font-awesome.css图标包-->
@@ -27,14 +29,19 @@ body { padding:0px;margin: 0px; }
 <div id="lyrow">
 
 
-    <h1 class="title">💖Home💖</h1>
-    <h1 class="study">「学习小屋」<br>近期更新：直线和圆<br>近期计划：</h1>
-    <h1 class="date">页面编辑<br>4月10日<br>00:00</h1>
-    <h1 class="orange">别和他们计较那些w 别自个生气 背后说我的多的去了，以前不也是一堆人嘛。几十天了 别和他们计较了哇。不过挺虚的，下次炸了就丢人啦，上周正好讲的电化学方程式的书写/捂脸。</h1>
-    <h1 class="blue">嘿嘿，昨天晚上不想写了弄得这个，应该是最后一次换布局了，没啥创意啦。刚开始弄得比这个好看不过行不通，介个喜欢吗？天气删了，不太搭qwq</h1>
-    <h1 class="green">网上找点自己夸自己的班任寄语/捂脸，那个要自己填好像，她没发群里还</h1>
-    <h1 class="red">最近又开始起痘痘了(╥╯^╰╥)哈哈哈 看来光用洗面奶也不太行。你有没有啥好招w？</h1>
-    <h1 class="purple">在学校好好努力哈🥰我们考到一起，就会有好多好多时间在一起，爱你爱你😘❤💕</h1>
-    <img src="https://i.loli.net/2021/02/20/dUTvPmiJCXjzfS4.png" class="imgunder" width="150" height="150">
-    <a class="bottom" href="https://wj.qq.com/s2/8057110/6e8c/"><br>你说我听<br>(*๓´╰╯`๓)<br>Love you</a>
+    <h1 class="home">高考加油</h1>
+    <h1 class="study">学习小屋ヾ(^▽^ヾ)<br>近期更新：<br>近期计划：力学解答题模板</h1>
+
+    
+  <h1 class="time">编辑时间：05-16    21:39 </h1>
+    
+    <h1 class="texta">刚吃完饭回来，好困啊😂中午没睡觉，躺一会儿出去送东西qwq</h1>
+    <h1 class="textb">和你在一起好幸福好开心w ヾ(^▽^ヾ)💕真好💕 </h1>
+    <h1 class="textc">我买了一堆那种押题密卷的电子版，网盘给你发过去啦，单聊发的，那个卷子真的好多好多哈哈哈。挑着看吧👀 </h1>
+    <h1 class="textd">今天下午没怎么喝水小心上火☆´∀｀☆多吃点水果哈</h1>
+  
+    <a class="bottom" href="https://wj.qq.com/s2/8057110/6e8c/">有事滴滴哇</a>
+  
+  <!--img引用：【【【 <img src="https://i.loli.net/2021/02/20/dUTvPmiJCXjzfS4.png" class="img" width="300" height="300">】】】-->
+
 </div>
